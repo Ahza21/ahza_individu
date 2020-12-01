@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  background-color:#C0C0C0;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  font-family:Algerian;
+  background:  #36454F;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #708090;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: #C0C0C0;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E5E4E2;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:#E5E4E2;font-family:Algerian;padding:5px">
+  <h4 style="text-align:center">HEY! YOU KNOW WHAT, IT'S OKAY TO NOT BE OKAY BECAUSE YOU'RE ONLY A HUMAN NOT A GOD</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>MY WEBSITE E YOUKOSO</h1>
+  <p>A HATERS ALWAYS GONNA BE A <b>HATERS</b>. JUST LET THEM BE BECAUSE <b>THEY ARE BORED AND SINGLE</b>.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="biodata.html">MY BIODATA</a>
+  <a href="fun fact.html">FUN FACT WITH ME</a>
+  <a href="gallery.html">MY GALLERY</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>A Little About Me</h2>
+    <center><p>Konnichiwa Minna! 
+I'm only students who simply intends to share my happiness, fact, and favourite recipe in this website. 
+I'd be very happy if you take a look. Thank you!
+</p></center>
+    <center><h4>
+    <a href="https://www.instagram.com/azxr_yza/">Instagram profile</a>
+    </h4></center>
+   <center> <h4>
+     <a href="mailto:anurahzaza@gmail.com">Send email</a>
+    </h4><center> <br>
+<h3>Please leave me a message</h3>
+  <p>Take care of yourself. Have courage and be kind</p>
+    
+    <form action ="process.php" method ="POST">
+          <div>
+              <label> First Name</label>
+              <input type="text" name ="firstName">
+          </div>
+          <br>
+          <div>
+              <label> Last Name</label>
+              <input type="text" name ="lasttName">
+          </div>
+          <br>
+          <div>
+              <label> Email</label>
+              <input type="email" name ="email">
+          </div>
+          <br>
+           <div>
+              <label>Message</label>
+              <textarea name="message"></textarea>
+             
+          </div>
+     </form>
+
+
+
+
+  </div>
+  <div class="main">
+     <h2>HOW TO MAKE FRIED RICE</h2>
+    <h5>Fried Rice, Nov 21, 2020</h5>
+    
+   <p>Fried rice is our all time favorite dish to make when we’re in a hurry or when we’re short on time. 
+It’s so easy to make and so delicious!. Besides, can be cook by everybody and can be a basic recipe for newbie who want to learn in cooking.<br>
+<p>INGREDIENTS<br>
+<br>
+4 Cloves of Garlic
+<br>
+1 Medium Onion, Sliced
+<br>
+4 Red Chilies, cut into 3
+<br>
+1 Inch of Ginger, sliced
+<br>
+1 Cup of Dried Anchovies
+<br>
+2 Eggs
+<br>
+1 Cup of Frozen Peas
+<br>
+1 Teaspoon of Salt
+<br>
+1 Tablespoon of Light Soy Sauce OR Liquid Aminos
+<br>
+3-4 Cups of Cooked Rice
+<br>
+4-6 Tablespoons of Cooking Oil
+                 </p>
+    <br>
+    <h2>INSTRUCTIONS TO COOK FRIED RICE</h2>
+    <h5>Instructions, Nov 28, 2020</h5>
+      
+<br>
+First, in a wok with a little bit of oil, add in the garlic, onions, chilies, ginger and anchovies. Fry until they are fragrant and the anchovies are crispy.
+<br>
+Then, remove and place it into a pestle and mortar. Pound the ingredients until it becomes a fine paste. Set aside.
+<br>
+In the same wok with the leftover oil, add in the pounded ingredients and lightly fry it.
+<br>
+Push the ingredients inside and crack 2 eggs in. Pour over the soy sauce onto the eggs and let it cook for 10 seconds then break the eggs up and mix it up with the chili paste.
+<br>
+Then, add in the frozen peas and the cooked rice. Mix it all together until combined.
+<br>
+Add in some salt and continue mixing. Cook until the rice starts to steam up.
+<br>
+Once done, remove from the heat and serve immediately in a bowl.
+<br>
+
+<p>There you go, easy right?. Good luck on trying!.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>COPYRIGHT&#169; 2020</h2>
+</div>
+
+</body>
+</html>
+
+		
